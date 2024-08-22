@@ -1,0 +1,19 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 150px);
+    overflow: auto;
+}
+
+.pokecard_front{
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+}
+
+.type_img{
+    height: 20px;
+}
