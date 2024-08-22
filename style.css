@@ -1,0 +1,45 @@
+@font-face {
+    font-family: pokeStyle;
+    src: url(./assets/img/font/PokemonHollowNormal-pyPZ.ttf);
+}
+
+@font-face {
+    font-family: headerFont;
+    src: url(./assets/img/font/PokemonHollowNormal-pyPZ.ttf);
+}
+
+*{
+    font-family: ;
+    margin: 0;
+}
+
+.bg{
+    background-image: url(./assets/img/pokeballBG.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: pokeStyle;
+    color: white;
+    font-size: 50px;
+    margin-left: 8px;
+}
+
+header{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    height: 25px;
+    margin-right: 8px;
+    border-radius: 8px;
+    border: 2px rgb(255, 251, 0);
+    border: solid;
+    text-align: center;
+}
