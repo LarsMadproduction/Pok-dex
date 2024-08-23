@@ -1,14 +1,18 @@
-function pokecardFront(poke) {
+function pokecardFront(poke, allPokeIndex) {
   return `<div class="pokecard_front">
-            <div>
+            <div class="card_header">
                 <h2>${poke.name}</h2>
                 <span>#${poke.id}</span>
             </div>
-            <div><img src="${poke.sprites.other.dream_world.front_default}" alt="Pokemon" /></div>
-            <div id="pokeType"></div>
+            <div class="pokemon_img"><img src="${poke.sprites.other.dream_world.front_default}" alt="Pokemon" /></div>
+            <div id="pokeType${allPokeIndex}"></div>
          </div>`;
 }
 
-function pokecardFrontType(typeIcon){
-  return`<img class="type_img" src="${typeIcon}" alt="Type" />`
+function pokecardFrontType(firstType, secondType ){
+  if (secondType == undefined) {
+    return`<div class="card_type"><span>Type: ${firstType}</span></div>`
+  }else{
+    return`<div class="card_type"><span>Type: ${firstType} ${secondType}</span></div>`
+  }
 }

@@ -5,11 +5,12 @@
 
 @font-face {
     font-family: mainFont;
-    src: url(./assets/font/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+    src: url(./assets/font/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 *{
     font-family: mainFont;
+    font-weight: bold;
     margin: 0;
 }
 
@@ -53,4 +54,12 @@ input{
 
 img{
     height: 120px;
+}
+
+@media(max-width:768px){
+    header{
+        height: 250px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
