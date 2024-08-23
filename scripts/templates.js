@@ -1,5 +1,5 @@
 function pokecardFront(poke, allPokeIndex) {
-  return `<div class="pokecard_front">
+  return `<div onclick="openOverlay(${allPokeIndex})" class="pokecard_front">
             <div class="card_header">
                 <h2>${poke.name}</h2>
                 <span>#${poke.id}</span>

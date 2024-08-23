@@ -15,8 +15,11 @@
         <h1>Pokédex</h1>
         <input placeholder="search your Pokémon" type="text" />
       </header>
-      <section class="content" id="content">
+      <section class="content max_width" id="content">
       </section>
+      <div onclick="closeOverlay()" class="overlay d_none" id="overlay">
+        <div onclick="logDownPrev(event)" class="card_overlay" id="cardOverlay"></div>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>

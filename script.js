@@ -62,3 +62,21 @@ function setTypes(allPokeIndex){
 //     let typeIcon = typePokemon.sprites['generation-viii']['sword-shield'].name_icon
 //     document.getElementById("pokeType").innerHTML += pokecardFrontType(typeIcon);
 //   }
+
+function openOverlay(){
+  let overlayRef = document.getElementById('overlay');
+  overlayRef.classList.remove('d_none')
+  let cardOverlayRef = document.getElementById('cardOverlay');
+  cardOverlayRef.innerHTML = "";
+}
+
+function closeOverlay() {
+  let overlayRef = document.getElementById('overlay');
+  overlayRef.classList.add('d_none');
+  let cardOverlayRef = document.getElementById('cardOverlay');
+  cardOverlayRef.innerHTML = '';
+}
+
+function logDownPrev(event){    
+  event.stopPropagation()
+}
