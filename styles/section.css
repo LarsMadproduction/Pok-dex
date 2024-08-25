@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 250px);
     overflow: auto;
 }
 
@@ -31,11 +31,11 @@
 
 .pokemon_img{
     margin: 16px;
-    transition: ease-in-out 500ms;
+    transition: ease-in-out 250ms;
 }
 
 .pokemon_img:hover{
-    transform: scale(1.5);
+    transform: scale(1.5) rotateZ(360deg);
 }
 
 .card_type{
@@ -46,5 +46,9 @@
 @media(max-width:768px){
     .pokecard_front{
         width: 270px;
+    }
+    .content{
+
+        height: calc(100vh - 350px);
     }
 }

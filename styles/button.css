@@ -1,0 +1,19 @@
+.load_button{
+    height: 100px;
+    font-size: 40px;
+    transition: ease-in-out 500ms;
+}
+
+.load_button:hover{
+    transform: scale(1.5) rotateZ(720deg);
+}
+
+.button_position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

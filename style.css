@@ -54,38 +54,6 @@ img{
     height: 120px;
 }
 
-.overlay {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(0, 0, 0, 0.350);
-}
-
-.card_overlay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 600px;
-    border: 2px solid black;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.493);
-    transition: 500ms;
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.d_none{
-    display: none;
-}
-
-
 @media(max-width:768px){
     header{
         height: 250px;
