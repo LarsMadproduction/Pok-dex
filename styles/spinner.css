@@ -1,6 +1,6 @@
 #spinner {
     position: absolute;
-    left: 50%;
+    left: calc(50% + 15px);
     top: 50%;
     z-index: 1;
     width: 120px;
@@ -10,6 +10,10 @@
     box-shadow: 0px 0px 20px rgb(255, 251, 0);
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
+  }
+
+  .spinner_img{
+    height: 120px;
   }
   
   @-webkit-keyframes spin {

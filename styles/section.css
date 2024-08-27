@@ -7,6 +7,7 @@
 }
 
 .pokecard_front{
+    overflow: hidden;
     height: 400px;
     width: 300px;
     display: flex;
@@ -23,24 +24,40 @@
 
 .card_header{
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 50px;
+    width: 100%;
     gap: 16px;
-    margin: 16px;
     text-transform: uppercase;
+    border-bottom: 2px solid white;
+    background-color: #4D5052;
 }
 
 .pokemon_img{
-    margin: 16px;
     transition: ease-in-out 250ms;
+    height: 100%;
 }
 
 .pokemon_img:hover{
     transform: scale(1.5) rotateZ(360deg);
 }
 
+.pokemon_img_size{
+    height: 120px;
+}
+
 .card_type{
-    text-transform: capitalize;
-    margin: 16px;
+    height: 100%;
+    width: 50%;
+    border-top: 2px solid white;
+}
+
+.card_type_size{
+    height: 32px;
+    width: 100%;
+    display: flex;
+    background-color: #4D5052;
 }
 
 @media(max-width:768px){
