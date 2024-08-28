@@ -55,16 +55,17 @@
 
 .show_sas {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: column;
   height: 100%;
   width: 100%;
 }
 
-.pokemon_img_shiny_size{
-    height: 200px;
+.pokemon_img_shiny_size {
+  height: 200px;
 }
 
-.pokemon_img_shiny{
-    height: 100%;
+.pokemon_img_shiny {
+  height: 100%;
 }

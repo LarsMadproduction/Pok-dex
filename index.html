@@ -18,16 +18,17 @@
     <div class="bg">
       <header>
         <h1>Pokédex</h1>
-        <input placeholder="search your Pokémon" id="searchPokemon" type="search" minlength="3"/>
+        <div class="order_field" id="inputField"><span class="warning_txt" id="warning">Please enter at least 3 character!</span></div>
       </header>
       <div onload="loadingSpinner()" class="spinner" id="spinner"><img class="spinner_img" src="./assets/img/pokeballWithe.png" alt=""></div>
       <section class="content d_none max_width" id="content"></section>
       <div onclick="closeOverlay()" class="overlay d_none" id="overlay">
         <div onclick="logDownPrev(event)" id="cardOverlay"></div>
       </div>
+      <div class="show_search" id="showSearch"></div>
       </div>
       <div class="button_position">
-        <img class="load_button" id="loadMore" onclick="loadMorePokemon()" src="./assets/img/1lm.png" alt="">
+        <img class="load_button d_none" id="loadMore" onclick="loadMorePokemon()" src="./assets/img/1lm.png" alt="">
       </div>
     </div>
     <script src="./scripts/loadmore.js"></script>

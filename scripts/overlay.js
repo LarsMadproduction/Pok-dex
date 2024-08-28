@@ -34,3 +34,9 @@ function showShiny(allPokeIndex){
   shiny.innerHTML = "";
   shiny.innerHTML += showShinyTemplate(allPokeIndex);
 }
+
+function nextCard(next, allPokeIndex){
+
+  allPokeIndex = (allPokeIndex + next + allPokemon.length) % allPokemon.length;
+  openOverlay(allPokeIndex)
+}
