@@ -1,14 +1,14 @@
-function init() {
-  loadingSpinner();
-  getPokeData();
-  document.getElementById('inputField').innerHTML += inputTemplate()
-}
-
 let pokemonLimit = 30;
 let pokemonOffset = 0;
 let allPokemon = [];
 let showPokemons = [];
 let pokemonID = [];
+
+function init() {
+  loadingSpinner();
+  getPokeData();
+  document.getElementById('inputField').innerHTML += inputTemplate()
+}
 
 async function getPokeData() {
   let response = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${pokemonLimit}&offset=${pokemonOffset}`);

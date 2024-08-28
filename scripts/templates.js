@@ -35,8 +35,8 @@ function pokeCardOverlay(allPokeIndex){
               </div>
             </div>
             <div class="arrow_gap">
-                <img id="leftArrow${allPokeIndex}" onclick="nextCard(-1, ${allPokeIndex})" class="arrowleft_img" src="../assets/img/left-arrow.png" alt="Pokemon" />
-                <img id="rightArrow${allPokeIndex}" onclick="nextCard(1, ${allPokeIndex})" class="arrowright_img" src="../assets/img/right-arrow.png" alt="Pokemon" />
+                <img onclick="nextCard(-1, ${allPokeIndex})" class="arrowleft_img" src="./assets/img/left-arrow.png" alt="Pokemon" />
+                <img onclick="nextCard(1, ${allPokeIndex})" class="arrowright_img" src="./assets/img/right-arrow.png" alt="Pokemon" />
               </div>
          </div>`
 }
